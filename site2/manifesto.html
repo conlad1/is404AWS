@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Star Wars Manifesto — Legacy & the Disney Sequels</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="A concise, sourced-by-fan-memory manifesto on how the Disney sequel trilogy clashes with Star Wars’ legacy." />
+<style>
+  :root{
+    --bg:#05070b;
+    --fg:#e9edf1;
+    --muted:#b8c0cc;
+    --accent:#ffe81f;
+    --panel:rgba(14,17,23,.7);
+    --card:#0d1117;
+    --border:rgba(255,255,255,.12);
+    --good:#57e389;
+    --warn:#ffb84d;
+    --bad:#ff6464;
+    --focus:#7fd3ff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%}
+  body{
+    background:radial-gradient(1200px 600px at 20% -10%, #0a0e16 0%, #05070b 60%, #000 100%);
+    color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","Liberation Sans",sans-serif;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  a:focus-visible, button:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:.5rem}
+  header{
+    position:sticky;top:0;background:rgba(5,7,11,.8);backdrop-filter: blur(8px);
+    border-bottom:1px solid var(--border);z-index:10
+  }
+  .wrap{max-width:min(1000px,92vw);margin:0 auto;padding:1rem}
+  nav{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+  .brand{color:var(--accent);font-weight:900;letter-spacing:.08em}
+  .pill{padding:.45rem .7rem;border:1px solid var(--border);border-radius:.6rem;background:var(--panel)}
+  main{padding:2rem 0;display:grid;gap:1rem}
+  h1{margin:.4rem 0 0;line-height:1.15}
+  .lead{color:var(--muted);margin:.35rem 0 1rem}
+  .grid{display:grid;gap:1rem}
+  @media (min-width:860px){ .grid{grid-template-columns:1.1fr .9fr} }
+  .card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1rem}
+  .badge{font-size:.8rem;border-radius:.5rem;padding:.15rem .45rem;border:1px solid var(--border);background:var(--panel)}
+  .list{display:grid;gap:.75rem}
+  .list li{margin-left:1rem}
+  .callout{border-left:4px solid var(--warn);padding:.75rem 1rem;background:linear-gradient(180deg, rgba(255,232,31,.06), transparent)}
+  footer{border-top:1px solid var(--border);color:var(--muted);padding:1rem;margin-top:1rem;text-align:center}
+  /* subtle parallax stars */
+  .bg-stars{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+    radial-gradient(1px 1px at 10% 20%, #ffffff7a 50%, transparent 51%),
+    radial-gradient(1px 1px at 80% 30%, #ffffff80 50%, transparent 51%),
+    radial-gradient(1px 1px at 30% 70%, #ffffff6b 50%, transparent 51%),
+    radial-gradient(1px 1px at 60% 80%, #ffffff5c 50%, transparent 51%),
+    radial-gradient(1px 1px at 50% 40%, #ffffff85 50%, transparent 51%);
+    opacity:.55}
+  .toc{display:flex;gap:.5rem;flex-wrap:wrap}
+  .toc a{font-size:.9rem}
+  .quote{font-style:italic;color:#d7dce6}
+  .table{width:100%;border-collapse:collapse;margin:.5rem 0}
+  .table th,.table td{border-bottom:1px solid var(--border);padding:.6rem .4rem;vertical-align:top}
+  .table th{color:var(--muted);text-align:left;font-weight:600}
+</style>
+</head>
+<body>
+<div class="bg-stars" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <span class="brand">STAR WARS — MANIFESTO</span>
+      <a class="pill" href="/index.html" aria-label="Back to cover">⟵ Cover</a>
+      <a class="pill" href="#thesis">Thesis</a>
+      <a class="pill" href="#continuity">Continuity</a>
+      <a class="pill" href="#characters">Characters</a>
+      <a class="pill" href="#world">World-building</a>
+      <a class="pill" href="#themes">Themes</a>
+      <a class="pill" href="#production">Production</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h1>Why the Sequels Feel Off-Legacy</h1>
+      <p class="lead">This is a fan’s critical perspective on Episodes VII–IX. It’s opinion, not gospel. The claim: the sequels fracture Star Wars’ legacy by breaking continuity, reversing hard-won arcs, shrinking the galaxy, and muddling the mythic themes that gave the saga its spine.</p>
+      <div class="toc">
+        <a href="#continuity">Continuity</a> ·
+        <a href="#characters">Characters</a> ·
+        <a href="#world">World-building</a> ·
+        <a href="#themes">Themes</a> ·
+        <a href="#production">Production choices</a>
+      </div>
+    </div>
+
+    <aside class="card">
+      <p><span class="badge">Tone</span> Respectful, evidence-leaning, but frank.</p>
+      <p><span class="badge">Premise</span> Star Wars is mythic space opera — a family saga about hope, fall, and redemption. Legacy means coherence across time.</p>
+      <p class="quote">“Canon is the skeleton; theme is the heartbeat.”</p>
+    </aside>
+  </section>
+
+  <section id="thesis" class="card">
+    <h2>Thesis</h2>
+    <p>The original and prequel trilogies chart a coherent arc: Republic → Empire → Rebellion → Renewal, anchored by the Skywalker family and the balance of the Force. The sequels often treat this resolved conflict as reset dressing — reviving the defeated Empire (as the First Order), re-isolating heroes, and re-running beats (planet killer, secret Palpatine) without the narrative debts that once made those beats meaningful.</p>
+  </section>
+
+  <section id="continuity" class="card">
+    <h2>Continuity & Canon Integrity</h2>
+    <table class="table" aria-describedby="continuity-note">
+      <thead>
+        <tr><th>Legacy Through-line</th><th>Sequel Disruption</th><th>Why Fans Bristle</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Empire’s fall cost everything; peace was earned.</td>
+          <td>First Order emerges with galaxy-spanning power quickly; New Republic minimized off-screen.</td>
+          <td>Undercuts the victory of VI; feels like progress is erased rather than challenged.</td>
+        </tr>
+        <tr>
+          <td>Chosen One prophecy and balance arc culminate in Anakin’s redemption.</td>
+          <td>Palpatine returns in IX, rendering the prior “final defeat” temporary.</td>
+          <td>Resurrection without foreshadowed rules weakens the mythic “endingness.”</td>
+        </tr>
+        <tr>
+          <td>Luke’s faith withstands darkness in VI.</td>
+          <td>In VIII, Luke contemplates killing a student and retreats as a nihilist hermit.</td>
+          <td>Sharp tonal inversion with little on-screen bridge from the hopeful Master we knew.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="continuity-note" class="callout">Continuity doesn’t require stasis — it requires consequences. Fans expected the past to inform the present more tightly than “surprise, it’s back.”</p>
+  </section>
+
+  <section id="characters" class="card">
+    <h2>Character Arcs & Reversals</h2>
+    <ul class="list">
+      <li><strong>Luke Skywalker:</strong> From unwavering redeemer to disillusioned exile. A fall can be compelling, but the script offers little connective tissue between Return-of-the-Jedi Luke and the man on Ahch-To. The reversal feels abrupt rather than inevitable.</li>
+      <li><strong>Han & Leia:</strong> Hard-won unity dissolves off-screen. Their separation resets them to smuggler/general archetypes, shrinking their growth into nostalgia poses.</li>
+      <li><strong>Rey:</strong> Compelling raw potential, but her identity pinballs: “nobody” → “all the Jedi/Palpatine’s heir.” The final reveal reframes her arc around a twist rather than a journey, dampening the found-family magic.</li>
+      <li><strong>Finn:</strong> A breakout premise — a stormtrooper who defects — sidelined into quips. The saga misses a rare chance to explore indoctrination, agency, and redemption from the other side of the blaster.</li>
+      <li><strong>Kylo Ren:</strong> The most consistent thread: legacy angst and seduction by power. Even so, his endgame pivots quickly to service a finale sprint.</li>
+    </ul>
+  </section>
+
+  <section id="world" class="card">
+    <h2>World-building & Scale</h2>
+    <p>Star Wars is a big galaxy that always felt personal. The sequels often invert that: huge events, thin context. A Republic erased, a fleet conjured, another planet-killer. Spectacle outruns scaffolding, so scale reads as noise, not awe.</p>
+    <ul class="list">
+      <li><strong>Institutional clarity:</strong> Who governs? Who funds the First Order? Why is resistance fringe after a civilizational victory?</li>
+      <li><strong>Technological stakes:</strong> Repeating super-weapons narrows strategic imagination; danger becomes a louder echo instead of a new frontier.</li>
+    </ul>
+  </section>
+
+  <section id="themes" class="card">
+    <h2>Thematic Spine</h2>
+    <p>The heart of Star Wars beats around <em>hope, attachment, redemption, and balance</em>. The sequels flirt with deconstruction — “let the past die” — then retreat into legacy reliquaries. The result is a thematic seesaw: gestures toward subversion without paying off either subversion or restoration with patient setup.</p>
+    <ul class="list">
+      <li><span class="badge">Hope</span> gets recast as repetition; victories don’t feel cumulative.</li>
+      <li><span class="badge">Redemption</span> lands, but compressed; repentance needs time to sting.</li>
+      <li><span class="badge">Balance</span> blurs into power escalation rather than moral harmony.</li>
+    </ul>
+  </section>
+
+  <section id="production" class="card">
+    <h2>Production Choices (Meta matters)</h2>
+    <p>Different directors/writers took alternating entries with limited shared scaffolding. You can sense handed-off plot threads: mysteries posed then swerved, then re-posed. Myth thrives on setup/payoff symmetry; fractured stewardship shows up on screen.</p>
+    <ul class="list">
+      <li><strong>Setup vs. payoff:</strong> Boxes opened, then replaced with different boxes.</li>
+      <li><strong>Tone whiplash:</strong> Nostalgia → subversion → reversal, rather than a coherent arc.</li>
+    </ul>
+    <p class="callout"><strong>Bottom line:</strong> Many fans aren’t mad at “new.” They’re mad at “unearned.” New can honor old if it grows from it.</p>
+  </section>
+
+  <section class="card">
+    <h2>Where This Leaves the Legacy</h2>
+    <p>Star Wars can hold multitudes — animation, novels, side-stories — and still respect the Skywalker saga’s spine. Fans calling the sequels “offensive to the legacy” aren’t gatekeeping novelty; they’re defending continuity of meaning. Honor the wins, evolve the myth, and let consequences accumulate rather than reset.</p>
+    <p><a href="/index.html">⟵ Back to Cover</a></p>
+  </section>
+</main>
+
+<footer>
+  &copy; <span id="y"></span> Fan project for discussion/education. Not affiliated with Lucasfilm/Disney.
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
