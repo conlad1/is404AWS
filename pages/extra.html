@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <title>Cowsay + Fortune</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+<body class="container">
+  <!-- …head… -->
+<body class="container">
+  <header>
+    <h1 class="title">Fortune-telling Cow</h1>
+  </header>
+
+  <main class="grid" style="grid-template-columns: 1fr;">
+    <section class="card">
+      <label class="label" for="dir-list">Page Directory</label>
+      <ol id="dir-list" style="margin:.75rem 0 0 1rem;">
+        <li class="row" style="margin-bottom:.5rem;">
+          <a class="btn btn--primary" href="../index.html">Home</a>
+        </li>
+        <li class="row">
+          <a class="btn" href="./mysql.html">MySQL</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Controls -->
+    <section class="card">
+      <div class="controls grid">
+        <textarea
+          id="msg"
+          class="mono input"
+          placeholder="Type a message or click Fortune…"
+        ></textarea>
+
+        <div class="opts row">
+          <label class="label">Wrap width
+            <input
+              id="width"
+              class="input input--number"
+              type="number"
+              min="10"
+              max="80"
+              value="40"
+            />
+          </label>
+          <label class="label">
+            <input id="think" type="checkbox" />
+            think (uses 'o' eyes)
+          </label>
+        </div>
+
+        <div class="row">
+          <button id="btnSay" class="btn">Say</button>
+          <button id="btnFortune" class="btn btn--primary">Fortune</button>
+          <button id="btnCopy" class="btn">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Output -->
+    <section class="card">
+      <pre id="output" class="mono" aria-live="polite"></pre>
+    </section>
+  </main>
+
+  <script src="../scripts/scripts.js" defer></script>
+</body>
+</html>
